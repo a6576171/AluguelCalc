@@ -38,7 +38,7 @@ int main()
             scanf("%d", &diasMes);
             if(diasMes < 28 || diasMes > 31)
             {
-                printf("Os meses tem no minimo 28 e no maximo 31 dias.\n");
+                printf("Os meses tem no minimo 28 e no maximo 31 dias.\n\n");
                 diasMes = 99;
                 system("pause");
             }
@@ -52,7 +52,7 @@ int main()
             scanf("%lf", &vMensalidade);
             if(vMensalidade <= 0)
             {
-                printf("O valor da mensalidade nao pode ser menor ou igual a zero.\n");
+                printf("O valor da mensalidade nao pode ser menor ou igual a zero.\n\n");
                 vMensalidade = 0;
                 system("pause");
             }
@@ -67,7 +67,7 @@ int main()
             scanf("%d", &cicloInicio);
             if(cicloInicio > diasMes || cicloInicio < 1)
             {
-                printf("O ciclo deve ser entre os dias 01 e o dia %d.\n", diasMes);
+                printf("O ciclo deve ser entre os dias 01 e o dia %d.\n\n", diasMes);
                 cicloInicio = 99;
                 cicloFim = 99;
                 system("pause");
@@ -84,11 +84,11 @@ int main()
         {
             system("cls");
             Header();
-            printf("Digite o dia do mes da rescisao do contrato (03, 09, 22, etc):\n> ");
+            printf("Digite o dia do mes da rescisao do contrato:\n> ");
             scanf("%d", &resContrato);
-            if(resContrato > diasMes && resContrato < 1)
+            if(resContrato > diasMes || resContrato < 1)
             {
-                printf("A rescisao deve ser entre os dias 01 e o dia %d.", diasMes);
+                printf("A rescisao deve ser entre os dias 01 e o dia %d.\n\n", diasMes);
                 resContrato = 99;
                 system("pause");
             }
