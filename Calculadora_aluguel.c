@@ -121,7 +121,6 @@ int main()
                 printf("Diarias a cobrar: %d\n", diasCobrar);
                 printf("Valor total das diarias: R$ %.2lf\n\n", vDiaria * diasCobrar);
                 printf("VALOR FINAL (MENSALIDADE + DIARIAS): R$ %.2lf\n\n", vFinal);
-                system("pause");
             }
             else
             {
@@ -135,13 +134,10 @@ int main()
                 printf("Diarias a cobrar: %d\n", diasCobrar);
                 printf("Valor total das diarias: R$ %.2lf\n\n", vDiaria * diasCobrar);
                 printf("VALOR FINAL (MENSALIDADE + DIARIAS): R$ %.2lf\n\n", vFinal);
-                system("pause");
             }
         }
 
-
-            system("cls");
-            Header();
+            printf("--------------------------------------------\n");
             printf("Deseja calcular novamente? (1. Sim - 2. Nao)\n> ");
             scanf("%d", &op);
 
